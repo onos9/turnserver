@@ -17,7 +17,7 @@ func main() {
 	publicIP := flag.String("public-ip", "", "IP Address that TURN can be contacted by.")
 	port := flag.Int("port", 3478, "Listening port.")
 	users := flag.String("users", "", "List of username and password (e.g. \"user=pass,user=pass\")")
-	realm := flag.String("realm", "pion.ly", "Realm (defaults to \"pion.ly\")")
+	realm := flag.String("realm", "turn.beznet.org", "Realm (defaults to \"turn.beznet.org\")")
 	flag.Parse()
 
 	if len(*publicIP) == 0 {
